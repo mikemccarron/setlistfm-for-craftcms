@@ -1,0 +1,15 @@
+{% extends "_layouts/cp" %}
+
+{% set content %}
+
+{% set title = 'Setlist.fm API Integration' %}
+
+<form method="post" action="" accept-charset="UTF-8">
+    <input type="hidden" name="action" value="setlistfm/artists/SaveArtist">
+    <input type="hidden" name="redirect" value="artists/artists">
+
+
+    <input class="btn submit" type="submit" value="{{ 'Sync'|t }}">
+</form>
+
+{% endset %}

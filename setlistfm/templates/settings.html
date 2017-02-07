@@ -1,0 +1,37 @@
+{% import '_includes/forms' as forms %}
+
+<div class="field">
+	<div class="heading">
+		<label for="apiKey">API Key</label>
+		<div class="instructions">
+			Log into your setlist.fm account, then <a href="http://www.setlist.fm/settings/api/">register your application</a> to generate an API key.
+		</div>
+	</div>
+
+	<div class="input">
+		{{ forms.textField({
+			id: 'apiKey',
+			name: 'apiKey',
+			value: settings.apiKey,
+			errors: settings.getErrors('apiKey')
+		}) }}
+	</div>
+</div>
+
+<div class="field">
+	<div class="heading">
+		<label for="mbid">MusicBrainz Identifier</label>
+		<div class="instructions">
+			In order to look up artist information, setlists and tour date you'll need to pass a <a href="https://musicbrainz.org/search">mbid</a> to certain queries.
+		</div>
+	</div>
+
+	<div class="input">
+		{{ forms.textField({
+			id: 'mbid',
+			name: 'mbid',
+			value: settings.mbid,
+			errors: settings.getErrors('mbid')
+		}) }}
+	</div>
+</div>
