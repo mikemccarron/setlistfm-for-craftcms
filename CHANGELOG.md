@@ -4,4 +4,3 @@
 
 * Alpha release
 
-Brought to you by [Mike McCarron](http://mikemccarron.com)

@@ -33,5 +33,3 @@ Setlist.fm API Integration works on Craft 2.4.x and Craft 2.5.x.
 Some things to do, and ideas for potential features:
 
 * Release it
-
-Brought to you by [Mike McCarron](http://mikemccarron.com)
