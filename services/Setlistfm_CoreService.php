@@ -39,7 +39,7 @@ class Setlistfm_CoreService extends BaseApplicationComponent
 
 	protected function _buildUrl($endpoint)
 	{
-		return 'http://api.setlist.fm/rest/0.1/' . $endpoint . '?';
+		return 'http://api.setlist.fm/rest/1.0/' . $endpoint . '?';
 	}
 
 	protected function _getIdFromOptions(&$options)
